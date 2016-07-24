@@ -1,27 +1,22 @@
 #/usr/bin/sh
 
 ### Print name of script
-echo $0
+printf "The name of script: %s\n" $0
 
 ### Number of args which supplied to the script
-echo $#
+printf "The number of args: %d\n" $#
 
 ### first supplied argument($2 -second and etc)
-echo $1
+printf "The first argument: %s\n" $1
 
 ### array of args
-echo $*
-
-for i in $*
-do
-  echo $i
-done
+echo "Array: $*"
 
 ### exit status of last command
-echo $?
+echo "Exit status: $?"
 
 ### the process id
-echo $$
+echo "PID: $$"
 
 ### the process id of the last command
-echo $!
+echo "PID of last command: $!"
