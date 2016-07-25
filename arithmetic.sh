@@ -36,3 +36,9 @@ res=$[ num1 + num2 ]
 res=$[ $num1 + $num2 ]
 
 echo "Result: $res"
+
+
+### Another approach
+#### Using expr
+val=`expr 2 + 2`
+echo "Result: $val"
