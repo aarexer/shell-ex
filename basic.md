@@ -69,3 +69,9 @@ echo "PID: $$"
 ```sh
 echo "PID of last command: $!"
 ```
+
+#### Перейти в созданную директорию
+
+```sh
+mkdir -p new/nested/directory && cd $_
+```
